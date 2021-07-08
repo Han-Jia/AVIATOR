@@ -4,10 +4,9 @@ The code repository for "Few-shot learning with adaptively initialized task opti
 
     @article{ye2020aviator,
       author    = {Han-Jia Ye and
-				   Xiang-Rong Sheng and
-				   De-Chuan Zhan},
-	  title     = {Few-shot learning with adaptively initialized task optimizer: a practical
-				   meta-learning approach},
+		   Xiang-Rong Sheng and
+		   De-Chuan Zhan},
+	  title     = {Few-shot learning with adaptively initialized task optimizer: a practical meta-learning approach},
 	  journal   = {Machine Learning},
 	  volume    = {109},
 	  number    = {3},
@@ -19,7 +18,7 @@ The code repository for "Few-shot learning with adaptively initialized task opti
 
 Considering the data collection and labeling cost in real-world applications, training a model with limited examples is an essential problem in machine learning, visual recognition, etc. Directly training a model on such few-shot learning (FSL) tasks falls into the over-fitting dilemma, which would turn to an effective task-level inductive bias as a key supervision. By treating the few-shot task as an entirety, extracting task-level pattern, and learning a task-agnostic model initialization, the model-agnostic meta-learning (MAML) framework enables the applications of various models on the FSL tasks. Given a training set with a few examples, MAML optimizes a model via fixed gradient descent steps from an initial point chosen beforehand. Although this general framework possesses empirically satisfactory results, its initialization neglects the task-specific characteristics and aggravates the computational burden as well. In this manuscript, we propose our AdaptiVely InitiAlized Task OptimizeR (AVIATOR) approach for few-shot learning, which incorporates task context into the determination of the model initialization. This task-specific initialization facilitates the model optimization process so that it obtains high-quality model solutions efficiently. To this end, we decouple the model and apply a set transformation over the training set to determine the initial top-layer classifier. Re-parameterization of the first-order gradient descent approximation promotes the gradient back-propagation. Experiments on synthetic and benchmark data sets validate that our AVIATOR approach achieves the state-of-the-art performance, and visualization results demonstrate the task-adaptive features of our proposed AVIATOR method.
 
-<img src='imgs/teaser.png' width='640' height='280'>
+<img src='imgs/teaser.png' width='900' height='280'>
 
 ## Prerequisites
 
