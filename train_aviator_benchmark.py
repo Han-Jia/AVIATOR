@@ -230,7 +230,7 @@ if __name__ == '__main__':
             # reset the running mean and variance
             for e in running_dict:
                 running_dict[e]['mean'] = deepcopy(running_dict[e]['mean_copy'])
-                running_dict[e]['var'] = deepcopy(running_dict[e]['mean_copy'])
+                running_dict[e]['var'] = deepcopy(running_dict[e]['var_copy'])
 
         vl = vl.item()
         va = va.item()
@@ -285,7 +285,7 @@ if __name__ == '__main__':
         # reset the running mean and variance
         for e in running_dict:
             running_dict[e]['mean'] = deepcopy(running_dict[e]['mean_copy'])
-            running_dict[e]['var'] = deepcopy(running_dict[e]['mean_copy'])
+            running_dict[e]['var'] = deepcopy(running_dict[e]['var_copy'])
 
     vtl = vtl.item()
     vta = vta.item()
@@ -335,7 +335,7 @@ if __name__ == '__main__':
             # reset the running mean and variance
             for e in running_dict:
                 running_dict[e]['mean'] = deepcopy(running_dict[e]['mean_copy'])
-                running_dict[e]['var'] = deepcopy(running_dict[e]['mean_copy'])         
+                running_dict[e]['var'] = deepcopy(running_dict[e]['var_copy'])         
             
         m, pm = compute_confidence_interval(test_acc_record)
         test_acc.append((m,pm))
