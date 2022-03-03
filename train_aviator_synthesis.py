@@ -5,8 +5,8 @@ import scipy.io as sio
 import numpy as np
 import torch
 import torch.nn.functional as F
-from feat.models.maml_fc_cls import MAML_FC_cls 
-from feat.utils import pprint, set_gpu, Averager, Timer, count_acc, euclidean_metric, compute_confidence_interval
+from model.models.maml_fc_cls import MAML_FC_cls 
+from model.utils import pprint, set_gpu, Averager, Timer, count_acc, euclidean_metric, compute_confidence_interval
 import shutil
 import pdb
 def save_model(name):
